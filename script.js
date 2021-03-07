@@ -12,14 +12,16 @@ function generatePassword() {
   var lowercase = window.confirm("Would you like lowercase letters?")
   var specialCharacter = window.confirm("Would you like special characters?")
   if (uppercase === true) {
-    
+    //if they choose uppercase then this is added to the pool to randomly select from
   }
 
   if (lowercase === true) {
+      //if they choose lowercase then this is added to the pool to randomly select from
 
   }
 
   if (specialCharacter === true) {
+    //if they choose characters then this is added to the pool to randomly select from
 
   }
 
@@ -42,3 +44,9 @@ function writePassword() {
 generateBtn.addEventListener("click", writePassword);
 
 }
+//once the characters have been selected, the must be combined
+//once the chacaters have ben combined then the number of characters selected for the password must be applied to the random formula
+
+
+var combinedCharacters = 
+var randomPassword = passwordGenerated[Math.floor(Math.random()*selectedCharacters.length)];
